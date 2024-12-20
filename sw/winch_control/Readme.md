@@ -57,9 +57,13 @@ The docker should launch at startup anyways but here is how to launch manually:
   - login: `administrator`
   - password: `clearpath`
 
-- build the docker image with the dockerfile found in the `ros` directory
+- build the docker image with the dockerfile found in the `itx` directory, name it `custom-ros` or change the name in the launch command.
 
-- launch it on the ITX with the `docker_ros` script
+- launch it on the ITX with
+
+```bash
+docker run --rm --group-add 986 -w /home/cpp_pubsub --privileged -v /dev/:/dev/:rw -v ./cpp_pubsub:/home/cpp_pubsub:rw -it custom-ros:latest bash
+```
 
 - $ `source ./install/setup.bash`
 
