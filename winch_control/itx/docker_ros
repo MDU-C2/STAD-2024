@@ -1,0 +1,4 @@
+#!/bin/bash
+
+PWD="/home/jacques/Documents/EFREI/S7/Stage_Malardalen/projet"
+docker run --rm --group-add 986 -w /home/ros/cpp_pubsub --privileged -v /dev/:/dev/:rw -v ${PWD}/ros:/home/ros:rw -it custom-ros:latest bash
