@@ -1,0 +1,12 @@
+#maked by Mohamad Hamdi Alhaji Shommo
+# Goal definition
+float32 altitude  # Target altitude
+
+---
+# Feedback definition
+float32 current_altitude  # Current altitude during flight
+
+---
+# Result definition
+string status  # Final status ("reached", "landed", etc.)
+
