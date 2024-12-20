@@ -1,0 +1,71 @@
+#!/bin/sh
+#
+# @name Coaxial Helicopter
+#
+# @type Helicopter
+# @class Copter
+#
+# @board px4_fmu-v2 exclude
+# @board bitcraze_crazyflie exclude
+#
+
+. ${R}etc/init.d/rc.heli_defaults
+
+# COAX heli
+param set-default MAV_TYPE 3
+param set-default CA_AIRFRAME 12
+
+
+# Disable PID gains for initial setup. These should be enabled after setting the FF gain.
+# P is expected to be lower than FF.
+param set-default MC_ROLLRATE_P 0
+param set-default MC_ROLLRATE_I 0
+param set-default MC_ROLLRATE_D 0
+param set-default MC_ROLLRATE_FF 0.1
+param set-default MC_PITCHRATE_P 0
+param set-default MC_PITCHRATE_I 0
+param set-default MC_PITCHRATE_D 0
+param set-default MC_PITCHRATE_FF 0.1
+
+# number of servos
+param set-default CA_SP0_COUNT 2
+
+param set-default CA_SV0_SLEW 0
+param set-default CA_SV1_SLEW 0
+
+# servo angles for the swash plate, even tho we don't have a swash plate ...
+# But we have two servos controling the pilt of the coaxial propellers plane
+param set-default CA_SP0_ANG0 0
+param set-default CA_SP0_ANG1 90
+
+# servo arm length to 10, the more the arm length the more the servo will move
+param set-default CA_SP0_ARM_L0 10
+param set-default CA_SP0_ARM_L1 10
+
+param set-default CA_SV_CS0 0
+param set-default CA_SV_CS1 0
+
+param set-default COM_SPOOLUP_TIME 0
+
+# servo setup
+
+param set-default PWM_AUX_FUNC5 201 # servo1 <-> AUX 5
+param set-default PWM_AUX_FUNC6 202 # servo2 <-> AUX 6
+
+param set-default PWM_AUX_FUNC5 201 # CW rotor <-> AUX 7
+param set-default PWM_AUX_FUNC5 201 # CCW rotor <-> AUX 8
+
+
+param set-default PWM_AUX_MAX5 1023
+param set-default PWM_AUX_MAX6 1023
+
+param set-default PWM_AUX_MIN5 0
+param set-default PWM_AUX_MIN6 0
+
+param set-default PWM_AUX_DIS5 512
+param set-default PWM_AUX_DIS6 512
+
+param set-default PWM_AUX_REV 48 # reverse range for servos {bit mask: 0011 0000}
+
+
+
