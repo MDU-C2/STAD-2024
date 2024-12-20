@@ -1,0 +1,20 @@
+<package format="2">
+  <name>yolo_image_subscriber</name>
+  <version>0.0.0</version>
+  <description>ROS2 image subscriber node for YOLOv8 analysis</description>
+
+  <maintainer email="your.email@example.com">Your Name</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>opencv-python</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
