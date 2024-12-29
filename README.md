@@ -23,5 +23,3 @@ and if something goes wrong you can always create a new container. It is suggest
 basics before getting started it should not take more than a couple of hours to familiarize with the
 basic commands.
 
-We also provided a step to step guides for each component it is suggested to start from the simulation
-guide.
