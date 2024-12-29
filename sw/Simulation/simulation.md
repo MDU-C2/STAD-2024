@@ -14,6 +14,13 @@ command.
 ```
 curl -sSL http://get.gazebosim.org | sh
 ```
+```
+cd
+```
+```
+cd PX4-Autopilot
+make px4_sitl gazebo-classic
+```
 after this command make run the make command above and it should work.
 
 ## Alternatively:
