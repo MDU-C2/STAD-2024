@@ -21,10 +21,10 @@ Ensure the following directory structure for the workspaces:
 
 On Drone PC (UAV):
 
--git clone <https://github.com/hamodiss/actrion-server-and-clien.git>
-
+```git clone <https://github.com/hamodiss/actrion-server-and-clien.git>
+```
 ## Step 1: Clone and Build UAV
-
+```
 -cd ~
 
 -cd uav_interface_ws
@@ -32,29 +32,30 @@ On Drone PC (UAV):
 -colcon build --cmake-clean-cache
 
 -source install/setup.bash
-
+```
 **Step 2: Run the UAV Action Server**
-
--ros2 run uav_control flight_action_server
-
+```
+ros2 run uav_control flight_action_server
+```
 On Husky PC (UGV):
-
--git clone <https://github.com/hamodiss/actrion-server-and-clien.git>
-
+```
+git clone <https://github.com/hamodiss/actrion-server-and-clien.git>
+```
 **Step 1: Clone and Build UGV**
+```
+cd ~
 
--cd ~
+cd ugv_ws
 
--cd ugv_ws
+colcon build --cmake-clean-cache
 
--colcon build --cmake-clean-cache
-
--source install/setup.bash
-
+source install/setup.bash
+```
 **Step 2: Run the UGV Action Client**
 
--ros2 run ugv_control flight_action_client
-
+```
+ros2 run ugv_control flight_action_client
+```
 ## Running the System
 
 Steps to Test the System:
@@ -63,14 +64,16 @@ Start the UAV Server:
 
 On the Drone PC, run:
 
--ros2 run uav_control flight_action_server
-
+```
+ros2 run uav_control flight_action_server
+```
 Start the UGV Client:
 
  On the Husky PC, run:
 
--ros2 run ugv_control flight_action_client
-
+```
+ros2 run ugv_control flight_action_client
+```
 Send Commands from UGV to UAV:
 Use the terminal on the Husky PC to send commands:
   - 1: Start flying to the target altitude.
