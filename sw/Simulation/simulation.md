@@ -1,7 +1,6 @@
 # Simulation Guide:
 
-To install simulation(https://docs.px4.io/main/en/dev_setup/building_px4.html#gazebo-classic) it is
-pretty much straight forward
+To install simulation(https://docs.px4.io/main/en/dev_setup/building_px4.html#gazebo-classic) follow the official guide.
 
 ```
 git clone https://github.com/PX4/PX4-Autopilot.git --recursive
