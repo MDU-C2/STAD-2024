@@ -2,31 +2,31 @@ Action Files on UAV
 
 ├── uav_interface_ws/ # Workspace for shared UAV action definitions
 
-│ └── src/
+│     └── src/
 
-│ └── uav_control_interfaces/
+            │ └── uav_control_interfaces/
 
-│ ├── action/
+                │ ├── action/
 
-│ │ └── Flight.action
+                    │ │ └── Flight.action
 
-│ ├── CMakeLists.txt
+                │ ├── CMakeLists.txt
 
-│ └── package.xml
+                │ └── package.xml
 
-├── uav_ws/ # Workspace for UAV server with MAVSDK
+  ├── uav_ws/ # Workspace for UAV server with MAVSDK
 
-│ └── src/
+    │ └── src/
 
-│ └── uav_control/
+        │ └── uav_control/
 
-│ ├── src/
+            │ ├── src/
 
-│ │ └── flight_action_server.cpp
+                │ │ └── flight_action_server.cpp
 
-│ ├── CMakeLists.txt
+    │ ├── CMakeLists.txt
 
-│ └── package.xml
+    │ └── package.xml
 
 Action files on UGV
 
