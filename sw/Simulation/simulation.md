@@ -20,6 +20,7 @@ cd
 cd PX4-Autopilot
 make px4_sitl gazebo-classic
 ```
+## to get the images from simulation run the following commands inside /python-files
 
 ## Alternatively:
 
