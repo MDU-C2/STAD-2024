@@ -1,9 +1,6 @@
 # stad
 Repo that contains all or most code from the project STAD.
-# Tools Installation Guide:
 
-This guide contains the step by step process of which tools to install on which node. It also provides
-overall view of system and which tools are required to be installed.
 
 ## Components in STAD:
 
@@ -11,7 +8,7 @@ overall view of system and which tools are required to be installed.
 2. UGV (PX2)
 3. Simulation
 
-## ROS Requirements:
+## Overview:
 
 UAV and UGV code are running on ROS2 foxy distribution while the simulation is running with ros
 humble distribution. The simulation is gazebo-classic with px4 since gazebo new version is not fully
