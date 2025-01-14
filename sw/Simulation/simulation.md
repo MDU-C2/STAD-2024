@@ -26,6 +26,8 @@ gst-launch-1.0 udpsrc port=5600 caps="application/x-rtp" ! rtph264depay ! avdec_
 
 python3 aruco.py
 ```
+The simulation works with uav_cpp packages, to run uav_cpp please view the guide inside /uav_cpp
+
 ## Alternatively:
 
 We already have a docker container which has everything set up and installed it is highly
