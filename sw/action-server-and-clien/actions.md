@@ -1,7 +1,7 @@
 
-1. Prerequisites
+# Prerequisites
 
-1. Install ROS 2 Foxy on both PCs.
+## Install ROS 2 Foxy on both PCs.
     - Follow the official ROS 2 Foxy installation guide.
 
 2\. File Structure
