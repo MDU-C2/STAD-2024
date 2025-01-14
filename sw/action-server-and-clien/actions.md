@@ -21,7 +21,8 @@ Ensure the following directory structure for the workspaces:
 
 On Drone PC (UAV):
 
-```git clone <https://github.com/hamodiss/actrion-server-and-clien.git>
+```
+git clone <https://github.com/hamodiss/actrion-server-and-clien.git>
 ```
 ## Step 1: Clone and Build UAV
 ```
