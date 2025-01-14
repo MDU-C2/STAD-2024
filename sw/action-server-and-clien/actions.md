@@ -1,6 +1,6 @@
 Action Files on UAV
 
-├── uav_interface_ws/ # Workspace for shared UAV action definitions
+├── uav_interface_ws
 
 │     └── src/
 
@@ -14,8 +14,7 @@ Action Files on UAV
 
                 │ └── package.xml
 
-  ├── uav_ws/ # Workspace for UAV server with MAVSDK
-
+  ├── uav_ws
     │ └── src/
 
         │ └── uav_control/
