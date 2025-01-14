@@ -13,7 +13,7 @@ Ensure the following directory structure for the workspaces:
  ~/uav_interface_ws: Contains the action definitions.
  ~/uav_ws: Contains the drone server and MAVSDK integration.
 
-##Husky PC
+## Husky PC
 ~/uav_interface_ws: Contains the shared action definitions.
  ~/ugv_ws: Contains the ground vehicle client for sending commands.
 
