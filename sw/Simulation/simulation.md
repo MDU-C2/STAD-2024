@@ -21,11 +21,11 @@ cd PX4-Autopilot
 make px4_sitl gazebo-classic
 ```
 ## To get the images from simulation run the following commands inside /python-files
-'''
+```
 gst-launch-1.0 udpsrc port=5600 caps="application/x-rtp" ! rtph264depay ! avdec_h264 ! videorate ! video/x-raw,framerate=1/1 ! videoconvert ! pngenc ! multifilesink location="frame.png"
 
 python3 aruco.py
-'''
+```
 ## Alternatively:
 
 We already have a docker container which has everything set up and installed it is highly
